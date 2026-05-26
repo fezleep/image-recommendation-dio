@@ -11,7 +11,7 @@ o foco aqui não foi treinar uma ia do zero. foi montar um fluxo pequeno, funcio
 o projeto segue este caminho:
 
 1. carrega algumas imagens de produtos
-2. usa a mobilenetv2 pre-treinada para extrair caracteristicas visuais
+2. usa a mobilenetv2 pré-treinada para extrair características visuais
 3. transforma cada imagem em um embedding
 4. compara a imagem de entrada com as imagens do dataset
 5. retorna as mais parecidas usando cosine similarity
@@ -20,7 +20,7 @@ o projeto segue este caminho:
 as categorias do dataset são bem simples:
 
 - relógios
-- tenis
+- tênis
 - camisetas
 
 ## embeddings, sem complicar
@@ -102,13 +102,17 @@ jupyter notebook notebooks/image_recommendation_colab.ipynb
 
 ## prints do projeto
 
-espaço reservado para colocar prints reais depois de rodar o notebook.
+### início do notebook
 
-exemplo:
+![inicio](README-assets/notebook_overview.png)
 
-```md
-![resultado](README-assets/result.png)
-```
+### carregamento da mobilenetv2
+
+![mobilenet](README-assets/mobilenet_loading.png)
+
+### resultado final das recomendações
+
+![resultado](README-assets/final_grid_result.png)
 
 ## aprendizados
 
@@ -120,17 +124,17 @@ com esse projeto eu pratiquei:
 - montagem de um fluxo simples de recomendação visual
 - organização de um projeto para github e google colab
 
-## proximos passos
+## próximos passos
 
 algumas melhorias que dá para fazer depois:
 
 - usar imagens reais de produtos
 - aumentar o dataset
-- salvar os embeddings para nao recalcular tudo sempre
-- testar outras redes pre-treinadas
+- salvar os embeddings para não recalcular tudo sempre
+- testar outras redes pré-treinadas
 - criar uma interface simples com streamlit
 
-## conclusao
+## conclusão
 
 este projeto não treina uma rede do zero.
 
